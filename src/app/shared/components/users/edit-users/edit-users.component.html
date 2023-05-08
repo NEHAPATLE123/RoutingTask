@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <div class="form-group">
+            <label for="">Users Name</label>
+            <input type="text" #pname value="{{selectedUser.username}}" class="form-control">
+            <div class="card mt-4">
+                <div class="card-header">
+                    <div class="card-body">
+                            <img src={{selectedUser.img}} #img alt="rose">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <!-- <button class="btn btn-primary" (click)="OnProdUpdate(pname,img)">Update Product</button> -->
+            <button mat-raised-button color="primary" (click)="OnProdUpdate(pname,img)">Update users</button>
+        </div>
+       
+    </div>
+</div>

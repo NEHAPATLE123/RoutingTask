@@ -1,0 +1,17 @@
+
+
+<div class="card mb-4">
+    <div class="card-header">
+        <h1>
+            The userName is {{userObject.username}}
+        </h1> 
+    </div>
+    <div class="card-body"> 
+        UserId Of this User is {{userObject.id}}
+    </div>
+    <div class="card-header">
+        <button class="btn btn-primary" [routerLink]="['/users', userObject.id, 'edit']">Edit User</button>
+        <!-- <mat-icon aria-hidden="false" [routerLink]="['/']" aria-label="Example home icon" fontIcon="home"></mat-icon> -->
+    </div>
+</div>
+
